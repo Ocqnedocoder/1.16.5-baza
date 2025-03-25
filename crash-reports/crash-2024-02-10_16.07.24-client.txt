@@ -1,0 +1,77 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 10.02.2024, 16:07
+Description: Unexpected error
+
+java.lang.ExceptionInInitializerError
+	at net.minecraft.client.gui.IngameGui.renderIngameGui(IngameGui.java:192)
+	at net.minecraft.client.renderer.GameRenderer.updateCameraAndRender(GameRenderer.java:601)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1125)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:637)
+	at net.minecraft.client.main.Main.main(Main.java:214)
+	at Start.main(Start.java:10)
+Caused by: java.lang.IllegalStateException: Shader failed to link!
+	at ru.client.helper.render.ShaderInit.<init>(ShaderInit.java:52)
+	at ru.client.helper.render.ShaderInit.<init>(ShaderInit.java:58)
+	at ru.client.helper.render.VegaUtil.<clinit>(VegaUtil.java:32)
+	... 6 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.minecraft.client.gui.IngameGui.renderIngameGui(IngameGui.java:192)
+
+-- Affected level --
+Details:
+	All players: 1 total; [ClientPlayerEntity['Endik_404'/5244, l='ClientLevel', x=-412.56, y=72.00, z=-267.13]]
+	Chunk stats: Client Chunk Cache: 729, 258
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (-61,71,80), Chunk: (at 3,4,0 in -4,5; contains blocks -64,0,80 to -49,255,95), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 101660 game time, 93387141 day time
+	Server brand: Paper
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.world.ClientWorld.fillCrashReport(ClientWorld.java:617)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2635)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:665)
+	at net.minecraft.client.main.Main.main(Main.java:214)
+	at Start.main(Start.java:10)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.8.1, Amazon.com Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Amazon.com Inc.
+	Memory: 215919184 bytes (205 MB) / 912261120 bytes (870 MB) up to 2057306112 bytes (1962 MB)
+	CPUs: 4
+	JVM Flags: 0 total; 
+	Launched Version: mcp
+	Backend library: LWJGL version 3.2.1 build 12
+	Backend API: AMD Radeon(TM) Vega 3 Graphics GL version 4.6.0 Compatibility Profile Context 23.11.1.231017, ATI Technologies Inc.
+	GL Caps: Using framebuffer using OpenGL 3.0
+	Using VBOs: Yes
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Graphics mode: fast
+	Resource Packs: vanilla
+	Current Language: English (US)
+	CPU: 4x AMD Ryzen 3 2200U with Radeon Vega Mobile Gfx 
+	OptiFine Version: OptiFine_1.16.5_HD_U_G8
+	OptiFine Build: ~~NULL~~
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.0 Compatibility Profile Context 23.11.1.231017
+	OpenGlRenderer: AMD Radeon(TM) Vega 3 Graphics
+	OpenGlVendor: ATI Technologies Inc.
+	CpuCount: 4

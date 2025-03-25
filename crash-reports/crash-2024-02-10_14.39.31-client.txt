@@ -1,0 +1,73 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 10.02.2024, 14:39
+Description: Rendering overlay
+
+java.lang.ExceptionInInitializerError
+	at net.minecraft.client.gui.screen.MainMenuScreen.render(MainMenuScreen.java:157)
+	at net.minecraft.client.gui.ResourceLoadProgressGui.render(ResourceLoadProgressGui.java:81)
+	at net.minecraft.client.renderer.GameRenderer.updateCameraAndRender(GameRenderer.java:632)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1125)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:637)
+	at net.minecraft.client.main.Main.main(Main.java:214)
+	at Start.main(Start.java:10)
+Caused by: java.lang.IllegalStateException: Shader failed to link!
+	at ru.client.helper.render.ShaderInit.<init>(ShaderInit.java:52)
+	at ru.client.helper.render.ShaderInit.<init>(ShaderInit.java:58)
+	at ru.client.helper.render.VegaUtil.<clinit>(VegaUtil.java:35)
+	... 7 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.minecraft.client.gui.screen.MainMenuScreen.render(MainMenuScreen.java:157)
+	at net.minecraft.client.gui.ResourceLoadProgressGui.render(ResourceLoadProgressGui.java:81)
+
+-- Overlay render details --
+Details:
+	Overlay name: net.minecraft.client.gui.ResourceLoadProgressGui
+Stacktrace:
+	at net.minecraft.client.renderer.GameRenderer.updateCameraAndRender(GameRenderer.java:632)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1125)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:637)
+	at net.minecraft.client.main.Main.main(Main.java:214)
+	at Start.main(Start.java:10)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.8.1, Amazon.com Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Amazon.com Inc.
+	Memory: 552537088 bytes (526 MB) / 1245708288 bytes (1188 MB) up to 2057306112 bytes (1962 MB)
+	CPUs: 4
+	JVM Flags: 0 total; 
+	Launched Version: mcp
+	Backend library: LWJGL version 3.2.1 build 12
+	Backend API: AMD Radeon(TM) Vega 3 Graphics GL version 4.6.0 Compatibility Profile Context 23.11.1.231017, ATI Technologies Inc.
+	GL Caps: Using framebuffer using OpenGL 3.0
+	Using VBOs: Yes
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Graphics mode: fast
+	Resource Packs: vanilla
+	Current Language: English (US)
+	CPU: 4x AMD Ryzen 3 2200U with Radeon Vega Mobile Gfx 
+	OptiFine Version: OptiFine_1.16.5_HD_U_G8
+	OptiFine Build: ~~NULL~~
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.0 Compatibility Profile Context 23.11.1.231017
+	OpenGlRenderer: AMD Radeon(TM) Vega 3 Graphics
+	OpenGlVendor: ATI Technologies Inc.
+	CpuCount: 4

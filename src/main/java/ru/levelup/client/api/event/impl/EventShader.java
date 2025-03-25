@@ -1,0 +1,11 @@
+package ru.levelup.client.api.event.impl;
+
+import ru.levelup.client.api.event.Event;
+
+public class EventShader extends Event {
+
+    public static void render(){
+
+    }
+
+}

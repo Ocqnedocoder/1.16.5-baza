@@ -1,0 +1,21 @@
+{
+  "minecraft:recipes/misc/diamond_from_blasting": {
+    "criteria": {
+      "has_diamond_ore": "2023-12-12 14:30:34 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_smelting": {
+    "criteria": {
+      "has_diamond_ore": "2023-12-12 14:30:34 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:dark_forest": "2023-12-12 14:30:34 +0300"
+    },
+    "done": false
+  },
+  "DataVersion": 2586
+}

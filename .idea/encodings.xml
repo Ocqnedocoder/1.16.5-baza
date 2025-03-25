@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/libraries/joml-1.10.5.jar" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/baritone/process/BuilderProcess.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ru/client/helper/ThemeUtil/ITool.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ru/client/helper/ThemeUtil/Theme.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ru/client/helper/ThemeUtil/ThemeTool.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ru/client/helper/ThemeUtil/Tool.java" charset="windows-1251" />
+  </component>
+</project>
